@@ -1,3 +1,151 @@
 git init
 git remote add origin "<url>"
 git push
+
+
+
+---------
+thanga.kumar@INBL01LAP20095 MINGW64 ~/My Coureses/GitHup-Practice (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text1 - Copy - Copy.txt
+        text1 - Copy.txt
+        text1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+thanga.kumar@INBL01LAP20095 MINGW64 ~/My Coureses/GitHup-Practice (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text1 - Copy - Copy.txt
+        text1 - Copy.txt
+        text1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+thanga.kumar@INBL01LAP20095 MINGW64 ~/My Coureses/GitHup-Practice (master)
+$ git add-A
+git: 'add-A' is not a git command. See 'git --help'.
+
+thanga.kumar@INBL01LAP20095 MINGW64 ~/My Coureses/GitHup-Practice (master)
+$ git add .
+
+thanga.kumar@INBL01LAP20095 MINGW64 ~/My Coureses/GitHup-Practice (master)
+$ git commit -"new commit"
+error: unknown switch `w'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+thanga.kumar@INBL01LAP20095 MINGW64 ~/My Coureses/GitHup-Practice (master)
+$ git commit -m "new commit"
+[master (root-commit) ff69a38] new commit
+ Committer: Thanga Kumar <thanga.kumar@collabera.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 9 insertions(+)
+ create mode 100644 text1 - Copy - Copy.txt
+ create mode 100644 text1 - Copy.txt
+ create mode 100644 text1.txt
+
+thanga.kumar@INBL01LAP20095 MINGW64 ~/My Coureses/GitHup-Practice (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+thanga.kumar@INBL01LAP20095 MINGW64 ~/My Coureses/GitHup-Practice (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 275 bytes | 275.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/137-AnanthaKumar/GitHub-practice/pull/new/master
+remote:
+To https://github.com/137-AnanthaKumar/GitHub-practice.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+thanga.kumar@INBL01LAP20095 MINGW64 ~/My Coureses/GitHup-Practice (master)
+$ git log
+commit ff69a3813d58d54ed09e25981ff77762c28c1960 (HEAD -> master, origin/master)
+Author: Thanga Kumar <thanga.kumar@collabera.com>
+Date:   Wed Nov 30 14:48:06 2022 +0530
+
+    new commit
+
+thanga.kumar@INBL01LAP20095 MINGW64 ~/My Coureses/GitHup-Practice (master)
